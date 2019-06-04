@@ -1,17 +1,53 @@
 const add = ()=>{
-    document.getElementById("result").value=(+document.getElementById("num1").value)+(+document.getElementById("num2").value);
+    let num1 = +document.getElementById("num1").value;
+    let num2 = +document.getElementById("num2").value;
+    let result = num1+num2;
+    if(Number.isNaN(result))
+    {
+    document.getElementById("result").value='';
+    alert("please enter valid numbers");
+    }
+    else
+    document.getElementById("result").value=result;
 }
 
 const divide = ()=>{
-    document.getElementById("result").value=(+document.getElementById("num1").value)/(+document.getElementById("num2").value);
+    let num1 = +document.getElementById("num1").value;
+    let num2 = +document.getElementById("num2").value;
+    let result = num1/num2;
+    if(Number.isNaN(result))
+    {
+    document.getElementById("result").value='';
+    alert("please enter valid numbers");
+    }
+    else
+    document.getElementById("result").value=result;
 }
 
 const multiply = ()=>{
-    document.getElementById("result").value=(+document.getElementById("num1").value)*(+document.getElementById("num2").value);
+    let num1 = +document.getElementById("num1").value;
+    let num2 = +document.getElementById("num2").value;
+    let result = num1*num2;
+    if(Number.isNaN(result))
+    {
+    document.getElementById("result").value='';
+    alert("please enter valid numbers");
+    }
+    else
+    document.getElementById("result").value=result;
 }
 
 const subtract = ()=>{
-    document.getElementById("result").value=(+document.getElementById("num1").value)-(+document.getElementById("num2").value);
+    let num1 = +document.getElementById("num1").value;
+    let num2 = +document.getElementById("num2").value;
+    let result = num1-num2;
+    if(Number.isNaN(result))
+    {
+    document.getElementById("result").value='';
+    alert("please enter valid numbers");
+    }
+    else
+    document.getElementById("result").value=result;
 }
 
 const resetForm = ()=>{
